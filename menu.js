@@ -81,7 +81,7 @@ console.log(price);
 */
 
 let {category} = pizza
-
+console.log(category);
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -136,9 +136,6 @@ let foodArr = [
         rating: 1,
         tags:["breadstick","dip"]
     }
-    
-    
-
 ]
 
 
@@ -203,7 +200,7 @@ function filterByProperty(property,number,type) {
     number = +number
     let filtArray = foodArr.filter((food)=>{
         if (type === "above") {
-            return food[String(property)]>number} 
+            return food[property]>number} 
         else if(type === "below"){
             return food[property]<number}
         })

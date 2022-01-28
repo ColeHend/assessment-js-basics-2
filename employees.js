@@ -60,8 +60,7 @@ empOne.getSchedule()
     spread operator or reassign it using 
     dot or bracket notation.
 */
-let arr = ["Nick","weekday mornings, weekday afternoons"]
-let empTwo = new Employee(...arr)
+let empTwo = {...empOne, name: 'nick'}
 //////////////////PROBLEM 2////////////////////
 /*  
     Write a class called Manager that *extends* 
@@ -90,7 +89,7 @@ class Manager extends Employee{
         super(name,shifts)
         this.employees = employees
     }
-    getEmployees(){console.log(`${this.name} manages ${this.employees}`);}
+    getEmployees(){console.log(`${this.name} manages ${this.employees.join(", ")}`);}
     addEmployee(emp){this.employees.push(emp)}
 }
 

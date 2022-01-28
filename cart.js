@@ -37,7 +37,6 @@ const cart = [
 
  const summedPrice = cart.reduce((accu,val)=>accu+val.price,0)
 
-
 //////////////////PROBLEM 2////////////////////
 /*  
     Write a function called `calcFinalPrice` that
@@ -75,10 +74,10 @@ let calcFinalPrice = (cartTotal,couponValue,tax) => (cartTotal * (1+tax))-coupon
 */
 
 /*
-    1) Name: To track them
-    2) Order: Track the food they have
-    3) Balance: track their current balance
-    4) Table: where they are seated
+    1) Name: To track them (string)
+    2) Order: Track the food they have (string array)
+    3) Balance: track their current balance (number)
+    4) Table: where they are seated (number)
 
 */
 
